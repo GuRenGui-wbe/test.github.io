@@ -1,0 +1,287 @@
+
+
+:root {
+  --primary-color: #efaea5;
+  --secondary-color: #df9994;
+  --text-dark: #0f172a;
+  --text-light: #94a3b8;
+  --white: #ffffff;
+  --max-width: 1400px;
+}
+.qwe{
+    
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+    height: 50%;
+      
+}
+
+.qwe {
+  
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+      to right,
+      rgba(189, 98, 95, 0.9),
+      rgba(255, 255, 255, 0)
+    ),
+    
+    /*首页背景*/
+    url(../img/shangp.JPG);
+    background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-s {
+  max-width: var(--max-width);
+  min-height: 100vh;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav__logo img {
+  max-width: 70px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.search {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+.search input {
+  width: 100%;
+  font-size: 1rem;
+  color: var(--primary-color);
+  outline: none;
+  border: none;
+}
+
+.search input::placeholder {
+  color: var(--secondary-color);
+}
+
+.search span {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.login {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login:hover {
+  background-color: var(--secondary-color);
+}
+
+.login button {
+  padding: 5px 8px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: var(--white);
+  border-radius: 100%;
+  opacity: 0.5;
+}
+
+.nav{
+  position:absolute;
+  width: 600px;
+  height: 600px;
+  margin: 10px;
+  top: 100px;
+ display: block;
+}
+.nav h1{
+  position: relative;
+  left: 120px;
+  
+}
+.text{
+  margin: 10px;
+  width: 400px;
+}
+.nav img{
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+.nav{
+  opacity:0;
+}
+.nav-s{
+  opacity:1;
+}
+.nav-op{
+  opacity:1;
+}
+.card {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  /* background: #fff; */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+  opacity: 0.7;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 700px;
+  position: relative;
+  left: 600px;
+}
+.card .poster::before {
+  content: '';
+  position: absolute;
+  bottom: -180px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #1064a6 50%, transparent);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.card:hover .poster::before {
+  bottom: 0;
+}
+
+.card .poster {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .poster img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card:hover .poster img {
+  transform: translateY(-50px);
+  filter: blur(5px); /* 高斯模糊 */
+}
+
+.card .details {
+  position: absolute;
+  bottom: -175px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.card:hover .details {
+  bottom: 0;
+}
+
+.card .details .logo {
+  max-width: 180px;
+}
+
+.card .details h3 {
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.card .details .rating {
+  position: relative;
+  padding: 5px 0;
+}
+
+.card .details .rating .fa-star {
+  color: #f7f406;
+  font-size: 1em;
+}
+
+.card .details .rating span {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.card .details .tags {
+  position: relative;
+  margin-top: 5px;
+}
+
+.card .details .tags span {
+  padding: 2px 5px;
+  color: #fff;
+  background: #03a8f5;
+  border-radius: 4px;
+}
+
+.card .details .tags span:nth-child(2) {
+  background: #ff5722;
+}
+
+.card .details .info {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.card .details .cast h4 {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.card .details .cast ul {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card .details .cast ul li {
+  list-style: none;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.card .details .cast ul li img {
+  width: 100%;
+}

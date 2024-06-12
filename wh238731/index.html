@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字云</title>
+    <style type="text/css" media="screen">
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #wrap{
+            /* 相对定位 */
+            position: relative;
+            left: 50%;
+            top: 50%;
+        }
+        #wrap .tag{
+            /* 来处理行内非替换元素的高宽问题的 */
+            display: inline-block;
+            /* 绝对定位 */
+            position: absolute;
+            /* 高度跟行高一直文字会垂直居中 */
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <a href="#" class="tag">前端学习</a>
+        <a href="#" class="tag">仵老大全世界最牛逼</a>
+        <a href="#" class="tag">css</a>
+        <a href="#" class="tag">html</a>
+        <a href="#" class="tag">jquery</a>
+        <a href="#" class="tag">设计模式</a>
+        <a href="#" class="tag">算法与数据结构</a>
+        <a href="#" class="tag">nodejs</a>
+        <a href="#" class="tag">tcp/ip详解</a>
+        <a href="#" class="tag">http</a>
+        <a href="#" class="tag">计算机网络</a>
+        <a href="#" class="tag">程序员面试宝典</a>
+        <a href="#" class="tag">剑指Offer</a>
+        <a href="#" class="tag">你不知道的javascript</a>
+        <a href="#" class="tag">java</a>
+        <a href="#" class="tag">java核心技术</a>
+        <a href="#" class="tag">nodejs实战</a>
+        <a href="#" class="tag">jquery</a>
+        <a href="#" class="tag">vue</a>
+        <a href="#" class="tag">移动端开发</a>
+        <a href="#" class="tag">HTML5</a>
+        <a href="#" class="tag">nodejs实战</a>
+        <a href="#" class="tag">nodejs实战</a>
+    </div>
+    <!-- 引入js -->
+    <script src="./index.js"></script>
+</body>
+</html>
